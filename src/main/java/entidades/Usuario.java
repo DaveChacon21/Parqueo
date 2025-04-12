@@ -1,12 +1,27 @@
 package entidades;
 
 public class Usuario {
+
 	private String nombre;
 	private String usuario;
 	private int idUsuario;
 	private String contrasena;
 	private String Rol;
 	private String mensajeError;
+
+	public Usuario(int idUsuario, String nombre, String usuario,  String contrasena, String rol) {
+		super();
+		this.nombre = nombre;
+		this.usuario = usuario;
+		this.idUsuario = idUsuario;
+		this.contrasena = contrasena;
+		Rol = rol;
+	}
+	
+	public Usuario() {
+		super();
+	}
+
 
 	public String getNombre() {
 		return nombre;
